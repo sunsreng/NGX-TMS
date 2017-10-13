@@ -1,0 +1,26 @@
+.example-headers-align .mat-expansion-panel-header-title, 
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mat-expansion-panel-header-description {
+  flex-grow: 0;
+}
+
+mat-list-item-content {
+  height: 34px;
+  padding: 0 16px;
+}
+
+mat-expansion-panel-header {
+  height: 44px;
+}
+
+mat-expansion-panel-header {
+  box-shadow: 0 0 2px darkolivegreen;
+}

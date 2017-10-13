@@ -1,0 +1,12 @@
+.footer {
+  background-color: blue;
+  color: blue;
+  font-family: sans-serif;
+  height: 30px;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 0 12px 0px black;
+  padding: 5px;
+  text-shadow: 0 0 10px black;
+  background-color: white;
+}

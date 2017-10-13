@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  flex: 1;
+}
+
+mat-sidenav {
+  width: 320px;
+  box-shadow: 0 0 5px darkolivegreen;
+}
+
+.content {
+  padding: 12px;
+}
