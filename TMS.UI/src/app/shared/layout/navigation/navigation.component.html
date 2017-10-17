@@ -12,13 +12,12 @@
           </mat-panel-description>
         </mat-expansion-panel-header>
 
-        <mat-form-field>
-          <input matInput placeholder="First name">
-        </mat-form-field>
-
-        <mat-form-field>
-          <input matInput type="number" min="1" placeholder="Age">
-        </mat-form-field>
+        <mat-nav-list>
+          <mat-list-item *ngFor="let nav of navRequest" [routerLink]="[nav.urls]">
+            <mat-icon matListIcon>{{nav.icon}}</mat-icon>
+            <h4 matLine>{{nav.name}}</h4>
+          </mat-list-item>
+        </mat-nav-list>
 
         <mat-action-row>
           <button mat-button color="primary" (click)="nextStep()">Next</button>

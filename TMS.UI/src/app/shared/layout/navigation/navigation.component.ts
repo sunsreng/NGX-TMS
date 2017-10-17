@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
   visible = true;
-  navList = [
-    { name: 'Home', icon: 'home', urls: '/' },
+  navRequest = [
+    { name: 'Request Form', icon: 'home', urls: '/request-form' },
     { name: 'Claim', icon: 'home', urls: '/' },
     { name: 'Product', icon: 'date_range', urls: '/' },
     { name: 'Admin', icon: 'account_circle', urls: '/' }
