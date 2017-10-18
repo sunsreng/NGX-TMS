@@ -9,7 +9,7 @@ export class NavigationComponent implements OnInit {
   visible = true;
   navRequest = [
     { name: 'Request Form', icon: 'home', urls: '/request-form' },
-    { name: 'Claim', icon: 'home', urls: '/' },
+    { name: 'User Form', icon: 'account_box', urls: '/user-form' },
     { name: 'Product', icon: 'date_range', urls: '/' },
     { name: 'Admin', icon: 'account_circle', urls: '/' }
   ];

@@ -1,0 +1,14 @@
+<mat-button-toggle-group #group="matButtonToggleGroup">
+  <mat-button-toggle value="left" [class.active]="size === 'small'" (click)="setSize('small')">
+    <mat-icon>format_align_left</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="center" [class.active]="size === 'memium'" (click)="setSize('memium')">
+    <mat-icon>format_align_center</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="right" [class.active]="size === 'large'" (click)="setSize('large')">
+    <mat-icon>format_align_right</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="justify" disabled>
+    <mat-icon>format_align_justify</mat-icon>
+  </mat-button-toggle>
+</mat-button-toggle-group>

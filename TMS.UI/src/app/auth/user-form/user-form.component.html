@@ -1,0 +1,33 @@
+<h1>User Form</h1>
+<form [formGroup]="userForm" (ngSubmit)="send()">
+  <div class="container">
+      <mat-form-field>
+        <input matInput placeholder="Enter your name" formControlName="name" required>
+        <mat-error *ngIf="name.invalid">Invalid name</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Enter your email" formControlName="email" unique>
+        <mat-error *ngIf="email.pending">Invalid email</mat-error>
+      </mat-form-field>
+      <!-- <mat-form-field>
+        <mat-select placeholder="Select your size" formControlName="size">
+          <mat-option value="small">Smaill</mat-option>
+          <mat-option value="medium">Medium</mat-option>
+          <mat-option value="large">Large</mat-option>
+        </mat-select>
+      </mat-form-field> -->
+      <size formControlName="size"></size>
+    <!-- <mat-form-field>
+      <input matInput placeholder="Enter your email" [formControl]="email" >
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field> -->
+    <!-- <mat-form-field>​
+      <input matInput placeholder="Enter your size" [formControl]="size" required>
+      <mat-error *ngIf="name.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field> -->
+  </div>
+  <div align="end">
+    <button type="submit" mat-raised-button color="primary">Submit</button>
+    <button type="button" mat-raised-button color="warn" (click)="reset()">Reset</button>
+  </div>
+</form>
